@@ -1,0 +1,25 @@
+#pragma once
+
+#include "CoreMinimal.h"
+#include "NativeGameplayTags.h"
+
+//Weapon attack tags
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Weapon_Pistol)
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Weapon_SubmachineGun)
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Weapon_AR)
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Weapon_Sniper)
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Weapon_Graviton)
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Weapon_GrenadeLauncher)
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Weapon_CyberPistol)
+
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Character_Rush)
+
+//Item related attack tags
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Item_CyberPunch)
+
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Drone_Missile)
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Attack_Drone_Pulsar)
+
+//State Tags
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_State_Character_InAir)
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_State_Character_Crouched)

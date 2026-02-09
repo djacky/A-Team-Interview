@@ -1,0 +1,3045 @@
+{
+	"folders": [
+		{
+			"name": "Shooter",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "A:\\UnrealSource5p4\\UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"files.associations": {
+			"__config": "cpp",
+			"*.inc": "cpp"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Shooter Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Shooter LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "Shooter LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Shooter",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterClient LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterClient LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterClient",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterEditor",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterEditor",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterEditor",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterEditor",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ShooterServer LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ShooterServer LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ShooterServer",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Shooter (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\Shooter-Win64-Debug.exe",
+				"preLaunchTask": "Shooter Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Shooter (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\Shooter-Win64-DebugGame.exe",
+				"preLaunchTask": "Shooter Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Shooter (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\Shooter.exe",
+				"preLaunchTask": "Shooter Win64 Development Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Shooter (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\Shooter-Win64-Test.exe",
+				"preLaunchTask": "Shooter Win64 Test Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Shooter (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\Shooter-Win64-Shipping.exe",
+				"preLaunchTask": "Shooter Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterClient (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterClient-Win64-Debug.exe",
+				"preLaunchTask": "ShooterClient Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterClient (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterClient-Win64-DebugGame.exe",
+				"preLaunchTask": "ShooterClient Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterClient (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterClient.exe",
+				"preLaunchTask": "ShooterClient Win64 Development Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterClient (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterClient-Win64-Test.exe",
+				"preLaunchTask": "ShooterClient Win64 Test Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterClient (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterClient-Win64-Shipping.exe",
+				"preLaunchTask": "ShooterClient Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterEditor (Debug)",
+				"request": "launch",
+				"program": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "ShooterEditor Win64 Debug Build",
+				"args": [
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject"
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterEditor (DebugGame)",
+				"request": "launch",
+				"program": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "ShooterEditor Win64 DebugGame Build",
+				"args": [
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject"
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterEditor (Development)",
+				"request": "launch",
+				"program": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "ShooterEditor Win64 Development Build",
+				"args": [
+					"C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject"
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterServer (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterServer-Win64-Debug.exe",
+				"preLaunchTask": "ShooterServer Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterServer (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterServer-Win64-DebugGame.exe",
+				"preLaunchTask": "ShooterServer Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterServer (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterServer.exe",
+				"preLaunchTask": "ShooterServer Win64 Development Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterServer (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterServer-Win64-Test.exe",
+				"preLaunchTask": "ShooterServer Win64 Test Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ShooterServer (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Binaries\\Win64\\ShooterServer-Win64-Shipping.exe",
+				"preLaunchTask": "ShooterServer Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "A:\\UnrealSource5p4\\UnrealEngine\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\Users\\ack\\Documents\\Unreal Projects\\Shooter\\Shooter\\Shooter.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "A:\\UnrealSource5p4\\UnrealEngine"
+			}
+		]
+	}
+}
